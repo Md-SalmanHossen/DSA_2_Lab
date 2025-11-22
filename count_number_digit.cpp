@@ -9,7 +9,7 @@ int sum_of_digit(int n){
     // base case
    //  if(n == 0) return 0;
    if(n<10) return n;
-   return 1 + sum_of_digit(n/10);
+   return  + sum_of_digit(n/10);
 }
 
 int main() {
