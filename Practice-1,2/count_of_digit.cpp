@@ -5,6 +5,7 @@ int sumCount(int n){
    if(n==0) return 0;
    return 1 +sumCount(n/10);
 }
+
 int main(){
    int n;
    cout<<"Enter your number ";
