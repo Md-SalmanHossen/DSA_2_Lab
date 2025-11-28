@@ -1,19 +1,17 @@
 #include<iostream>
 using namespace std;
 
-int power(int x){
-   if(x==1)return true;
-   if(x==0 || x%4!=0) return false;
-   return x*power(x/4);
+int power(int x,int n){
+   if(n==0 ) return 1;
+   return x*power(x,n-1);
 }
 
 int main(){
-   int x;
+   int x,n;
    cout<<"Enter your numbers: "<<endl;
-   cin>>x;
+   cin>>x>>n;
 
-   if(power(x)) cout<<"Yes, power of 4";
-   else cout <<"Not a power of 4";
+   cout<<"the result is "<<power(x,n);
    
    return 0;
 }
