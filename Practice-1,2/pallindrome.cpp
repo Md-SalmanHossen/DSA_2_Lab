@@ -11,7 +11,7 @@ int main(){
    cout<<"Enter a string ";
    cin>>s;
 
-   if(isPalindrome(s,0,s.length())) cout <<"Yes";
+   if(isPalindrome(s,0,s.length()-1)) cout <<"Yes";
    else cout <<"No";
    return 0;
 }
