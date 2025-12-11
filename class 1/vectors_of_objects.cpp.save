@@ -1,0 +1,50 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>   // required for sort()
+using namespace std;
+
+// Define a structure named 'student'
+struct student {
+    int id;        // student ID
+    double cgpa;   // student CGPA
+
+
+    student(int i, double c) {
+    id=i;
+    cgpa=c;
+    }
+
+    // Member function to display student info
+    void display() {
+        cout << "ID: " << id << "  CGPA: " << cgpa << endl;
+    }
+};
+
+// Comparator function to compare two students by CGPA
+bool compareStudent(student s1, student s2) {
+    return s1.cgpa < s2.cgpa;   // ascending order
+}
+
+int main() {
+    // Initialize a vector of student objects using initializer list
+    vector<student> s = {
+        student(1, 3.4),
+        student(3, 3.1),
+        student(5, 3.8),
+        student(4, 3.56)
+    };
+
+    
+    
+    // Sort the students in ascending order of CGPA using compareStudent
+    sort(s.begin(), s.end(), compareStudent);
+
+    cout << "Students sorted in ascending order of CGPA:\n";
+
+    // Display all students after sorting
+    for (student x : s)
+        x.display();
+
+    return 0;
+}
+
