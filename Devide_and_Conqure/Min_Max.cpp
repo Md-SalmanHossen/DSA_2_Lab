@@ -9,6 +9,7 @@ void getMinMax(vector<int>& a,int l,int h,int &mn,int &mx){
        mn=mx=a[l];
        return;
    };
+   
    if(l==h-1){
       if(a[l]<a[h]){
          mn=a[l];
