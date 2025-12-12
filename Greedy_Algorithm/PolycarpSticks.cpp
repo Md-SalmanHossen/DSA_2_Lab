@@ -2,22 +2,25 @@
 using namespace std;
 
 int main(){
-   int a,b;
-   cout<<"Enter your values ";
-   cin>> a >>b;//sticks and diamonds
-   
-   int dollars=0;
+    int a,b;
+    cout<<"Enter sticks and diamonds: ";
+    cin>> a >>b;
 
-   //craft shovels first
-   int shovels=min(a/2,b);
-   a-=shovels*2;
-   a-=shovels;
+    int dollars=0;
 
-   //craft swords with reaming
-   int swords=min(a,b/2);
-   dollars=shovels+swords;
+    // craft shovels first (2 sticks + 1 diamond)
+    int shovels = min(a/2, b);
+    a -= shovels*2;  // sticks used
+    b -= shovels;    // diamonds used
 
-   cout<<dollars;
+    // craft swords with remaining (1 stick + 2 diamonds)
+    int swords = min(a, b/2);
+    a -= swords;     // sticks used
+    b -= swords*2;   // diamonds used
 
-   return 0;
+    dollars = shovels + swords;
+
+    cout << dollars << endl;
+
+    return 0;
 }

@@ -1,19 +1,14 @@
 Problem Simplified (খুব সহজভাবে)
 
 Polycarp-এর কাছে আছে:
-
-a sticks
-
-b diamonds
+- a sticks
+- b diamonds
 
 তিনটি বিষয় মনে রাখো:
-
-Shovel বানাতে লাগে → 2 sticks + 1 diamond → 1 dollar
-
-Sword বানাতে লাগে → 1 stick + 2 diamonds → 1 dollar
-
-প্রশ্ন:
-Polycarp কতটা Dollar কামাতে পারে যদি সে সবচেয়ে ভালোভাবে সব resource ব্যবহার করে?
+- Shovel বানাতে লাগে → 2 sticks + 1 diamond → 1 dollar
+- Sword বানাতে লাগে → 1 stick + 2 diamonds → 1 dollar
+- প্রশ্ন:
+- Polycarp কতটা Dollar কামাতে পারে যদি সে সবচেয়ে ভালোভাবে সব resource ব্যবহার করে?
 
 ⭐ Step 1: Tools কি বানানো যায়?
 
